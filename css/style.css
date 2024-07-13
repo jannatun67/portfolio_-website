@@ -123,9 +123,7 @@ main section{
     justify-content: space-around;
     margin-top: 30px;
 }
-.about-item{
 
-}
 .item-title{
     color: #757575;
     font-size: 20px;
@@ -229,3 +227,51 @@ input[type="text"],footer input[type="email"],textarea{
    border: 0;
 }
 
+/* Responsive Media query */
+
+
+@media screen and (max-width:576px) {
+    .skills-container{
+        flex-direction: column;
+    }
+    .resume-container{
+        flex-direction: column;
+    }
+    footer{
+       flex-direction: column;
+       padding: 20px;
+    }
+    .footer-column{
+        width: 100%;
+    }
+    input[type="text"], footer input[type="email"], textarea{
+        width: calc(100% - 40px);
+    }
+    .about{
+        padding: 20px;
+    }
+    .about-items{
+        flex-direction: column;
+    }
+    .banner{
+        flex-direction: column;
+        margin: 20px;
+    }
+    header{
+        background-image: none;
+    }
+    .banner-profile{
+        width: 100%;
+    }
+   nav, nav >ul{
+    flex-direction: column;
+    gap: 20px;
+   }
+  
+}
+/* tablet responsive media query */
+@media screen and (min-width:576px) and (max-width:992px){
+    .banner{
+        flex-direction: column;
+    }
+}
